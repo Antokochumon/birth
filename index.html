@@ -193,6 +193,14 @@
       100% { transform: translateY(-110vh); opacity: 0; }
     }
 
+     @keyframes glow {
+      0% { background-position: 0% 50%;}
+      20% { background-position: 50% 50%;}
+      50% { background-position: 100% 50%;}
+      70% { background-position: 100% 50%;}
+      100% { background-position: 80% 130% 50%;}
+    }
+
     /* 3D Rotating Image Gallery Styles */
     .box {
       position: relative;
@@ -279,11 +287,11 @@
         max-width: 400px;
       }
       .box {
-        width: 80px;
-        height: 100px;
+        width: 90px;
+        height: 110px;
       }
       .box span {
-        transform: rotateY(calc(var(--i) * 40deg)) translateZ(130px);
+        transform: rotateY(calc(var(--i) * 40deg)) translateZ(140px);
         margin: 15px; /* Increased margin for larger screens */
       }
     }
